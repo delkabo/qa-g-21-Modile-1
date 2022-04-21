@@ -17,4 +17,8 @@ public class Project {
     public static String getApp() {
         return configStack.identificateapp();
     }
+
+    public static String url() {
+        return configStack.url();
+    }
 }

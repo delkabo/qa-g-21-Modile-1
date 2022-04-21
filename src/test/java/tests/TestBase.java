@@ -23,11 +23,6 @@ public class TestBase {
 
     @BeforeAll
     public static void setup() {
-//        Properties p = System.getProperties();
-//        String s = p.getProperty("versionapp");
-//        if (s == null){
-//            System.setProperty("versionapp", "newapp");
-//        }
 
         addListener("AllureSelenide", new AllureSelenide());
 
