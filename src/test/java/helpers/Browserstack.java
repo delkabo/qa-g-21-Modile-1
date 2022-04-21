@@ -1,5 +1,6 @@
 package helpers;
 
+import config.Project;
 import io.restassured.response.Response;
 
 import static io.restassured.RestAssured.given;
@@ -7,7 +8,7 @@ import static io.restassured.RestAssured.given;
 public class Browserstack {
     public static String videoUrl(String sessionId) {
         return given()
-                .auth().basic("kamils_PeB4qo", "hmVhFnNy5QKLCChqVfCd")
+                .auth().basic(Project.getUserName(), Project.getPassword())
                 .when()
                 .get("https://api-cloud.browserstack.com/app-automate/sessions/" + sessionId +".json")
                 .then()

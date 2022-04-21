@@ -18,8 +18,11 @@ import static helpers.Browserstack.videoUrl;
 
 public class TestBase {
 
+
     @BeforeAll
     public static void setup() {
+//        System.setProperty("versionapp", "newapp");
+
         addListener("AllureSelenide", new AllureSelenide());
 
         Configuration.browser = BrowserStackMobileDriver.class.getName();
