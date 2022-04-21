@@ -15,9 +15,6 @@ public class BrowserStackAndroidWikiLastTests extends TestBase {
 
     @Test
     void searchTest() {
-//        Properties p = System.getProperties();
-//        String s = p.getProperty("versionapp");
-//        if (s.equals("newapp") && s.equals(null)) {
 
         step("Click to SKIP", () ->
                 $(MobileBy.id("org.wikipedia.alpha:id/fragment_onboarding_skip_button")).click());

@@ -11,6 +11,6 @@ public interface ProjectConfig extends Config {
     @Key("password")
     String password();
 
-    @Key("versionapp")
-    String versionapp();
+    @Key("identificateapp")
+    String identificateapp();
 }

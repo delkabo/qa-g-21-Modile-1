@@ -10,6 +10,8 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.remote.SessionId;
 
+import java.util.Properties;
+
 import static com.codeborne.selenide.Selenide.closeWebDriver;
 import static com.codeborne.selenide.Selenide.open;
 import static com.codeborne.selenide.logevents.SelenideLogger.addListener;
@@ -21,7 +23,11 @@ public class TestBase {
 
     @BeforeAll
     public static void setup() {
-//        System.setProperty("versionapp", "newapp");
+//        Properties p = System.getProperties();
+//        String s = p.getProperty("versionapp");
+//        if (s == null){
+//            System.setProperty("versionapp", "newapp");
+//        }
 
         addListener("AllureSelenide", new AllureSelenide());
 

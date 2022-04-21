@@ -15,6 +15,6 @@ public class Project {
     }
 
     public static String getApp() {
-        return configStack.versionapp();
+        return configStack.identificateapp();
     }
 }
