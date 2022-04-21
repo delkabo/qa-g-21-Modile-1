@@ -2,7 +2,7 @@ package config;
 
 import org.aeonbits.owner.Config;
 
-@Config.Sources("classpath:${versionapp}.properties")
+@Config.Sources({"classpath:${versionapp}.properties"})
 public interface ProjectConfig extends Config {
 
     @Key("username")
