@@ -43,7 +43,6 @@ public class TestBase {
         Attach.pageSource();
 
         closeWebDriver();
-        videoUrl(sessionId);
         Attach.video(sessionId);
     }
 
